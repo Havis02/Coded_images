@@ -1,12 +1,9 @@
-
-
 function setup() {
-    createCanvas(595,842);
-    background(0);
-    noLoop();
+    createCanvas(600,850);
 
 }
 
 function draw() {
+    background(0);
  
 }
