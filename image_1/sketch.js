@@ -22,7 +22,7 @@ function mousePressed() { // create new object when mouse is pressed//
 function draw() {
         background(255, 204, 230); //changes the colour of the canvas//
         noFill(); //will prevent fill within jittering circles//
-        stroke(255); //will make circles white//
+        stroke(153, 153, 255); //will make circles blue//
         for (let i = 0; i < dots.length; i++) { // for statement to move and display all the objects//
         dots[i].move();
         dots[i].display();
