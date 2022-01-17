@@ -8,7 +8,7 @@ function draw() {
         noStroke (); //removes stroke//
         fill(255, 77, 196); //changes colour of the shape created below//
         ellipse(300,400,280,280); //makes a circle in a particular size and position//
-        
+        triangle(30, 75, 58, 20, 86, 75);
 }
   
 
