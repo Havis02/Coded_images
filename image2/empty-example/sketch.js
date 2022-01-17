@@ -1,3 +1,4 @@
+
 function setup() {
   createCanvas(600,800);
 }
@@ -24,4 +25,6 @@ function draw() {
   noStroke();
   fill(255, 153, 255);
   triangle(80, 520, 158, 220, 280, 520);
+
 }
+
