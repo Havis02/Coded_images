@@ -9,10 +9,16 @@ function setup() {
         noFill(); //will prevent fill within jittering circles//
         stroke(255); //will make circles white//
         // Create objects
-  for (let i = 0; i < 50; i++) { //creating for loop - will control how many times the shapes will jitter//
-        dots.push(new Jitter(random(width), random(height), random(10, 30))); //establishes the Array being created, also makes the shapes being made random in size and jitter amount//
+  for (let i = 0; i < 30; i++) { //creating for loop - will control how many times the shapes will jitter//
+        dots.push(new Jitter(random(width), random(height), random(10, 50))); //establishes the Array being created, also makes the shapes being made random in size and jitter amount//
       }
 }
+
+function mousePressed() { // create new object when mouse is pressed//
+        let r = random(10, 60); //further random jitters//
+        let b = new Jitter(mouseX, mouseY, r); //will change jitter depending on mouse clicks//
+        dots.push(b); //links 'mousePressed' function code back to array//
+      }
         
 function draw() {
         background(255, 204, 230); //changes the colour of the canvas//
