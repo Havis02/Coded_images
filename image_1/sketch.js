@@ -23,6 +23,7 @@ function draw() {
         background(255, 204, 230); //changes the colour of the canvas//
         noFill(); //will prevent fill within jittering circles//
         stroke(153, 153, 255); //will make circles blue//
+        strokeWeight(5);
         for (let i = 0; i < dots.length; i++) { // for statement to move and display all the objects//
         dots[i].move();
         dots[i].display();
@@ -34,6 +35,26 @@ function draw() {
       stroke (255, 0, 191); //adds stroke//
       fill(255, 102, 217); //changes colour of the shape created below//
       ellipse(300,400,280,280); //makes a circle in a particular size and position//
+      noStroke ();
+      fill (255);
+      ellipse(50, 200, 50,50);
+      ellipse(90, 200, 65, 65);
+      ellipse(130, 200, 50,50);
+      ellipse(120, 400, 50,50);
+      ellipse(160, 400, 65, 65);
+      ellipse(190, 400, 50,50);
+      ellipse(120, 700, 50,50);
+      ellipse(155, 700, 65, 65);
+      ellipse(190, 700, 50,50);
+      ellipse(120, 700, 50,50);
+      ellipse(155, 700, 65, 65);
+      ellipse(190, 700, 50,50);
+      ellipse(120, 100, 50,50);
+      ellipse(155, 100, 65, 65);
+      ellipse(190, 100, 50,50);
+      ellipse(420, 540, 50,50);
+      ellipse(455, 540, 65, 65);
+      ellipse(490, 540, 50,50);
       
  
 }
