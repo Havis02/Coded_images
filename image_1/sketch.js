@@ -7,6 +7,7 @@ let dots = []; // array of Jitter objects
 
 function setup() {
         createCanvas(600,800); //makes a canvas to code and 'draw' on//
+        angleMode(DEGREES)
         // Create objects
   for (let i = 0; i < 30; i++) { //creating for loop - will control how many times the shapes will jitter//
         dots.push(new Jitter(random(width), random(height), random(10, 50))); //establishes the Array being created, also makes the shapes being made random in size and jitter amount//
@@ -35,26 +36,34 @@ function draw() {
       stroke (255, 0, 191); //adds stroke//
       fill(255, 102, 217); //changes colour of the shape created below//
       ellipse(300,400,280,280); //makes a circle in a particular size and position//
-      noStroke ();
-      fill (255);
-      ellipse(50, 200, 50,50);
-      ellipse(90, 200, 65, 65);
-      ellipse(130, 200, 50,50);
-      ellipse(120, 400, 50,50);
-      ellipse(160, 400, 65, 65);
-      ellipse(190, 400, 50,50);
-      ellipse(120, 700, 50,50);
-      ellipse(155, 700, 65, 65);
-      ellipse(190, 700, 50,50);
-      ellipse(120, 700, 50,50);
-      ellipse(155, 700, 65, 65);
-      ellipse(190, 700, 50,50);
-      ellipse(120, 100, 50,50);
-      ellipse(155, 100, 65, 65);
-      ellipse(190, 100, 50,50);
-      ellipse(420, 540, 50,50);
-      ellipse(455, 540, 65, 65);
-      ellipse(490, 540, 50,50);
+      noStroke (); //defines no stroke//
+      fill (255); //fills them white//
+      ellipse(50, 200, 50,50); //creates circle shape in defined position and size//
+      ellipse(90, 200, 65, 65); //creates circle shape in defined position and size//
+      ellipse(130, 200, 50,50); //creates circle shape in defined position and size//
+      ellipse(120, 400, 50,50);//creates circle shape in defined position and size//
+      ellipse(160, 400, 65, 65);//creates circle shape in defined position and size//
+      ellipse(190, 400, 50,50);//creates circle shape in defined position and size//
+      ellipse(120, 700, 50,50);//creates circle shape in defined position and size//
+      ellipse(155, 700, 65, 65);//creates circle shape in defined position and size//
+      ellipse(190, 700, 50,50);//creates circle shape in defined position and size//
+      ellipse(120, 700, 50,50);//creates circle shape in defined position and size//
+      ellipse(155, 700, 65, 65);//creates circle shape in defined position and size//
+      ellipse(190, 700, 50,50);//creates circle shape in defined position and size//
+      ellipse(120, 100, 50,50);//creates circle shape in defined position and size//
+      ellipse(155, 100, 65, 65);//creates circle shape in defined position and size//
+      ellipse(190, 100, 50,50);//creates circle shape in defined position and size//
+      ellipse(420, 540, 50,50);//creates circle shape in defined position and size//
+      ellipse(455, 540, 65, 65);//creates circle shape in defined position and size//
+      ellipse(490, 540, 50,50);//creates circle shape in defined position and size//
+
+      push();
+      stroke(255);
+      noFill();
+      rotate(80);
+      arc(-60, -100, 50, 40, 100, 360);
+      pop();
+      
       
  
 }
