@@ -23,6 +23,10 @@ function mousePressed() { // create new object when mouse is pressed//
 function draw() {
         background(255, 204, 230); //changes the colour of the canvas//
         noStroke (); //removes stroke//
+        for (let i = 0; i < dots.length; i++) { // move and display all the objects//
+        dots[i].move();
+        dots[i].display();
+      }
         fill(255, 77, 196); //changes colour of the shape created below//
         ellipse(300,400,280,280); //makes a circle in a particular size and position//
         triangle(360, 300, 300, 150, 520, 240); //makes triangle in said position and size//
