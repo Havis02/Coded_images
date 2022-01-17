@@ -23,7 +23,7 @@ function mousePressed() { // create new object when mouse is pressed//
 function draw() {
         background(255, 204, 230); //changes the colour of the canvas//
         noStroke (); //removes stroke//
-        for (let i = 0; i < dots.length; i++) { // move and display all the objects//
+        for (let i = 0; i < dots.length; i++) { // for statement to move and display all the objects//
         dots[i].move();
         dots[i].display();
       }
@@ -33,6 +33,27 @@ function draw() {
         triangle(85, 550, 320, 650, 250, 510); //makes second triangle in said position and size//
         
 }
+
+//Jitter class//
+class Jitter { //creation of a class to group the code together//
+
+        constructor(x, y, r) {
+          this.x = x; //establishing the use and need for previously valued 'x'//
+          this.y = y; //establishing the use and need for previously valued 'y'//
+          this.diameter = r; //linking to prior 'let r = random(10, 60);' and making the jitters of the circles be random'
+          this.speed = 2; //stating the speed of the jitter//
+      
+        }
+      
+        move() { 
+          this.x += random(-this.speed, this.speed); //makes the movement of the circles on both the 'x axis' and the 'y axis' random//
+          this.y += random(-this.speed, this.speed);
+        }
+      
+        display() {
+          ellipse(this.x, this.y, this.diameter, this.diameter); //makes the display of the circles on both the 'x axis' and the 'y axis' random//
+        }
+      }
   
 
 
