@@ -21,7 +21,14 @@ function mousePressed() { // create new object when mouse is pressed//
       }
         
 function draw() {
-        background(255, 204, 230); //changes the colour of the canvas//
+  c1 = color(255, 204, 230); //picks colour for gradient//
+  c2 = color(255, 153, 204); //picks colour for gradient//
+  for(let y=0; y<height; y++){ //for loop, declaring the height 'length' of the gradient//
+    n = map(y,0,height,0,1); //'maps' out when the gradient will start and end//
+    let newc = lerpColor(c1,c2,n); //let valuable to link and blend the two chosen colours together//
+    stroke(newc); //calls the let variable//
+    line(0,y,width, y); //stops the gradient from looking 'blocky'//
+  } 
         noFill(); //will prevent fill within jittering circles//
         stroke(153, 153, 255); //will make circles blue//
         strokeWeight(5);
