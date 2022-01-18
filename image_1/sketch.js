@@ -57,6 +57,12 @@ function draw() {
       ellipse(455, 540, 65, 65);//creates circle shape in defined position and size//
       ellipse(490, 540, 50,50);//creates circle shape in defined position and size//
 
+      fill(255, 230, 255);
+      ellipse(400,410,15,25);
+      ellipse(394,365,25,45);
+      rotate(200);
+      
+
       push();
       stroke(255);
       noFill();
