@@ -49,26 +49,26 @@ function draw() {
   ellipse(420, 170, 32, 32); //creates and postions circle on page//
   ellipse(440, 170, 25, 25); //creates and postions circle on page//
 
-  fill(89, 0, 179);
-  triangle(485, 520, 485, 260, 620, 520);
-  fill(78, 0, 170);
-  triangle(485, 350, 485, 260, 550, 350);
-  fill(102, 0, 204);
-  triangle(50, 520, 80, 430, 80, 520);
+  fill(89, 0, 179); //selects colour of the triangle//
+  triangle(485, 520, 485, 260, 620, 520); //draws triangles in attempt to fit the gradient and cover the excess mountain triangles//
+  fill(78, 0, 170); //selects colour of the triangle//
+  triangle(485, 350, 485, 260, 550, 350); //draws triangles in attempt to fit the gradient and cover the excess mountain triangles//
+  fill(102, 0, 204); //selects colour of the triangle//
+  triangle(50, 520, 80, 430, 80, 520); //draws triangles in attempt to fit the gradient and cover the excess mountain triangles//
 
 
   
-  noStroke();
-  fill(230, 0, 172);
-  ellipse(600, 760, 550, 550);
-  fill(255, 51, 204);
-  ellipse(630, 790, 550, 550);
-  fill(255, 102, 217);
-  ellipse(660, 820, 550, 550);
-  fill(255, 128, 255);
-  ellipse(690, 850, 550, 550);
-  fill(117, 26, 255);
-  ellipse(720, 880, 550, 550);
+  noStroke(); //removes stroke//
+  fill(230, 0, 172); //colours circle//
+  ellipse(600, 760, 550, 550); //draws and positons circles to overlap with one another//
+  fill(255, 51, 204); //colours circle//
+  ellipse(630, 790, 550, 550); //draws and positons circles to overlap with one another//
+  fill(255, 102, 217); //colours circle//
+  ellipse(660, 820, 550, 550); //draws and positons circles to overlap with one another//
+  fill(255, 128, 255); //colours circle//
+  ellipse(690, 850, 550, 550); //draws and positons circles to overlap with one another//
+  fill(117, 26, 255); //colours circle//
+  ellipse(720, 880, 550, 550); //draws and positons circles to overlap with one another//
 
 }
 
