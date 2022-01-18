@@ -1,10 +1,10 @@
 // an array to add multiple particles
-let particles = [];
+let particles = []; //declares both a let variable and the array//
 
 function setup() {
   createCanvas(800,600); //creating canvas//
-  for(let i = 0;i<width/10;i++){
-    particles.push(new Particle());
+  for(let i = 0;i<width/10;i++){ //for loop, to add more than one particle//
+    particles.push(new Particle()); //linking to class, creating new particles//
   }
 }
 
@@ -17,7 +17,7 @@ function draw() {
     stroke(newc); //calls the let variable//
     line(0,y,width, y); //stops the gradient from looking 'blocky'//
   }
-  for(let i = 0;i<particles.length;i++) {
+  for(let i = 0;i<particles.length;i++) { //for loop: varys the 
     particles[i].createParticle();
     particles[i].joinParticles(particles.slice(i));
   }
