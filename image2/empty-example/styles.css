@@ -10,3 +10,9 @@ h1{
     font-size: 35px;
     color: rgb(146, 100, 255);
 }
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: rgb(142, 0, 170); 
+}
