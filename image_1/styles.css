@@ -4,3 +4,15 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: palevioletred;
+}
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: rgb(221, 16, 143);
+}
